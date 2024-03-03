@@ -1,0 +1,23 @@
+version: '3.6'
+# name: my-project-name
+services:
+  database:
+    container_name: postgres
+    image: postgres:15.3-alpine
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    ports:
+      - '${POSTGRES_PORT}:5432'
+    networks:
+      - network
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+      - ./development/db/init:/docker-entrypoint-initdb.d
+
+networks:
+  network:
+
+volumes:
+  dbdata:

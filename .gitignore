@@ -1,0 +1,10 @@
+# secret file
+.env
+
+node_modules
+
+.nuxt
+
+dist
+.output
+

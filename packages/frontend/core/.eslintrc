@@ -1,0 +1,26 @@
+{
+  "root": true,
+  // "plugins": ["@typescript-eslint", "nuxt", "prettier"],
+  "extends": ["@nuxt", "plugin:prettier/recommended", "prettier"],
+  "rules": {
+    "no-multiple-template-root": "off"
+    // "nuxt/rule-name": 2
+    // "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    // "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
+    // "@typescript-eslint/no-explicit-any": "off",
+    //   "prettier/prettier": [
+    //     "warn",
+    //     {
+    //       "arrowParens": "always",
+    //       "semi": false,
+    //       "trailingComma": "none",
+    //       "tabWidth": 2,
+    //       "endOfLine": "auto",
+    //       "useTabs": false,
+    //       "singleQuote": true,
+    //       "printWidth": 120,
+    //       "jsxSingleQuote": true,
+    //     },
+    //   ],
+  }
+}
