@@ -154,6 +154,16 @@ const swiperNavigation = {
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </swiper-container>
+    <template #fallback>
+      <!-- this will be rendered on server side -->
+      <ul>
+        <li v-for="banner in banners" :key="banner.id">
+          <a href="#">
+            <img :src="banner.imageUrl" alt="burger" />
+          </a>
+        </li>
+      </ul>
+    </template>
   </client-only>
   <!-- </Swiper> -->
 </template>

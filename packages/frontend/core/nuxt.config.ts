@@ -8,9 +8,14 @@ if (isDevelopment) {
 }
 
 export default defineNuxtConfig({
+  // ssr: false,
   devtools: { enabled: true },
   modules,
   elementPlus: {
     /** Options */
+  },
+  experimental: {
+    //   payloadExtraction: false,
+    // inlineSSRStyles: false // or a function to determine inlining
   }
 })
