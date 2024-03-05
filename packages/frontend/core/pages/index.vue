@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <NuxtLayout>
     <Banner />
     <BookCategory />
-  </div>
+    <BookCategory />
+  </NuxtLayout>
 </template>

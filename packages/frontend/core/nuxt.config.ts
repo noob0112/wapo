@@ -17,5 +17,5 @@ export default defineNuxtConfig({
   experimental: {
     //   payloadExtraction: false,
     // inlineSSRStyles: false // or a function to determine inlining
-  }
+  },
 })

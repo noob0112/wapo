@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:css": "stylelint path/to/css/**/*"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -33,6 +34,8 @@
     "eslint-plugin-prettier": "^5.1.3",
     "prettier": "^3.2.5",
     "sass": "^1.71.1",
+    "stylelint": "^16.2.1",
+    "stylelint-rscss": "^0.4.0",
     "typescript": "^5.3.3"
   }
 }

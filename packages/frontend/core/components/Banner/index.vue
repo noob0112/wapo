@@ -133,29 +133,27 @@ const swiperNavigation = {
     }"
     :navigation="swiperNavigation"
   > -->
-  <client-only>
-    <swiper-container
-      navigation="true"
-      :pagination="true"
-      :pagination-clickable="true"
-      :autoplay="{ delay: 3000 }"
-      speed="500"
-      loop="true"
-      css-mode="true"
-    >
-      <swiper-slide v-for="banner in banners" :key="banner.id">
-        <a href="#">
-          <img :src="banner.imageUrl" />
-        </a>
-      </swiper-slide>
-      <!-- Add Pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
-      <!-- Add Navigation -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </swiper-container>
-    <template #fallback>
-      <!-- this will be rendered on server side -->
+  <swiper-container
+    navigation="true"
+    :pagination="true"
+    :pagination-clickable="true"
+    :autoplay="{ delay: 3000 }"
+    speed="500"
+    loop="true"
+    css-mode="true"
+  >
+    <swiper-slide v-for="banner in banners" :key="banner.id">
+      <a href="#">
+        <img :src="banner.imageUrl" />
+      </a>
+    </swiper-slide>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </swiper-container>
+  <!-- <template #fallback>
       <ul>
         <li v-for="banner in banners" :key="banner.id">
           <a href="#">
@@ -163,8 +161,7 @@ const swiperNavigation = {
           </a>
         </li>
       </ul>
-    </template>
-  </client-only>
+    </template> -->
   <!-- </Swiper> -->
 </template>
 

@@ -9,14 +9,14 @@ export default {
     './app.vue',
     './error.vue',
     'App.{js,ts,vue}',
-    'app.{js,ts,vue}'
+    'app.{js,ts,vue}',
   ],
   theme: {
-    extend: {}
+    extend: {},
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['light', 'dark']
+    themes: ['light', 'dark'],
   },
   typography: {
     // default: {
@@ -28,5 +28,5 @@ export default {
     //     "code::after": false,
     //   },
     // },
-  }
+  },
 }
